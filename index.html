@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Portafolio profesional de Aitor Perez, desarrollador front-end especializado en HTML, CSS, JavaScript y React.">
+  <meta name="description"
+    content="Portafolio profesional de Aitor Perez, desarrollador front-end especializado en HTML, CSS, JavaScript y React.">
   <link rel="stylesheet" href="main.css" />
   <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@6/css/flag-icons.min.css" />
+
   <title>Aitor Perez - Portafolio</title>
 </head>
+
 <body>
 
   <header>
@@ -20,6 +25,10 @@
       <a href="https://linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
     </div>
     <button id="darkModeToggle" aria-label="Cambiar modo oscuro">Modo oscuro</button>
+    <button id="langToggle" onclick="switchLanguage()" aria-label="Switch language">
+      <span id="langFlag" class="fi fi-us"></span> 
+
+    </button>
   </header>
 
   <main>
@@ -38,11 +47,17 @@
       <h2>Habilidades</h2>
       <div class="card">
         <h3>HTML5 & CSS3</h3>
-        <div class="skill-bar"><div class="skill-level" style="width: 95%;">95%</div></div>
+        <div class="skill-bar">
+          <div class="skill-level" style="width: 95%;">95%</div>
+        </div>
         <h3>JavaScript</h3>
-        <div class="skill-bar"><div class="skill-level" style="width: 90%;">90%</div></div>
+        <div class="skill-bar">
+          <div class="skill-level" style="width: 90%;">90%</div>
+        </div>
         <h3>React</h3>
-        <div class="skill-bar"><div class="skill-level" style="width: 85%;">85%</div></div>
+        <div class="skill-bar">
+          <div class="skill-level" style="width: 85%;">85%</div>
+        </div>
       </div>
     </section>
 
@@ -97,11 +112,11 @@
     <section>
       <h2>Certificaciones</h2>
       <div class="card">
-      <ul>
-        <li>✔️ Certificado en Responsive Web Design – freeCodeCamp</li>
-        <li>✔️ JavaScript Avanzado – Udemy (2024)</li>
-        <li>✔️ Git y GitHub – OpenBootcamp</li>
-      </ul>
+        <ul>
+          <li>✔️ Certificado en Responsive Web Design – freeCodeCamp</li>
+          <li>✔️ JavaScript Avanzado – Udemy (2024)</li>
+          <li>✔️ Git y GitHub – OpenBootcamp</li>
+        </ul>
       </div>
     </section>
 
@@ -115,7 +130,8 @@
 
     <section>
       <h2>📄 Vista previa del CV</h2>
-      <iframe src="archivos/DICCIONARIO SQL (1).pdf" width="100%" height="500px" title="Currículum Vitae de Aitor Perez"></iframe>
+      <iframe src="archivos/DICCIONARIO SQL (1).pdf" width="100%" height="500px"
+        title="Currículum Vitae de Aitor Perez"></iframe>
       <p style="text-align:center;">
         <a href="aitor-perez-cv.pdf" download class="descargar-cv">⬇️ Descargar CV en PDF</a>
       </p>
@@ -143,7 +159,8 @@
     &copy; 2025 Aitor Perez - Todos los derechos reservados
   </footer>
 
-  
+
   <script src="main.js"></script>
 </body>
+
 </html>
