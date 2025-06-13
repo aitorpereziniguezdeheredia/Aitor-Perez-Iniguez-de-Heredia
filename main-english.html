@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Professional portfolio of Aitor Perez, front-end developer specialized in HTML, CSS, JavaScript, and React.">
+  <link rel="stylesheet" href="main.css" />
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@6/css/flag-icons.min.css">
+
+  <title>Aitor Perez - Portfolio</title>
+</head>
+<body>
+
+  <header>
+    <img src="tu-foto.jpg" alt="Profile picture of Aitor Perez" class="profile-pic" />
+    <h1>Aitor Perez</h1>
+    <p>Front-End Developer specialized in responsive and accessible web experiences.</p>
+    <div class="buttons">
+      <a href="archivos/DICCIONARIO SQL (1).pdf" download>📄 Download CV</a>
+      <a href="#contact">📬 Contact</a>
+      <a href="https://linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
+    </div>
+    <button id="darkModeToggle" aria-label="Toggle dark mode">Dark Mode</button>
+  </header>
+
+  <main>
+    <section>
+      <h2>About Me</h2>
+      <ul class="quick-info">
+        <li><strong>📍 Location:</strong> Madrid, Spain</li>
+        <li><strong>📧 Email:</strong> aitor3080@gmail.com</li>
+        <li><strong>🧠 Specialty:</strong> Front-End & UI</li>
+        <li><strong>🗣️ Languages:</strong> Spanish (native), English (B2)</li>
+      </ul>
+      <p>I am a Front-End developer passionate about creating clean, modern, and accessible web experiences.</p>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <div class="card">
+        <h3>HTML5 & CSS3</h3>
+        <div class="skill-bar"><div class="skill-level" style="width: 95%;">95%</div></div>
+        <h3>JavaScript</h3>
+        <div class="skill-bar"><div class="skill-level" style="width: 90%;">90%</div></div>
+        <h3>React</h3>
+        <div class="skill-bar"><div class="skill-level" style="width: 85%;">85%</div></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Featured Projects</h2>
+      <div class="card">
+        <h3>💻 Website for Company X</h3>
+        <p>Full front-end development focused on mobile experience and accessibility.</p>
+        <a href="https://github.com/tuusuario/proyecto-x" target="_blank">View code on GitHub</a>
+      </div>
+      <div class="card">
+        <h3>📱 Task App in React</h3>
+        <p>Simple app to manage daily tasks with a clean and functional design.</p>
+        <a href="https://github.com/tuusuario/app-tareas" target="_blank">View code on GitHub</a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Project Gallery</h2>
+      <div class="gallery">
+        <a href="https://github.com/tuusuario/proyecto1" target="_blank">
+          <img src="img/proyecto1-thumb.jpg" alt="Screenshot of project 1" />
+        </a>
+        <a href="https://github.com/tuusuario/proyecto2" target="_blank">
+          <img src="img/proyecto2-thumb.jpg" alt="Screenshot of project 2" />
+        </a>
+        <a href="https://github.com/tuusuario/proyecto3" target="_blank">
+          <img src="img/proyecto3-thumb.jpg" alt="Screenshot of project 3" />
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <h2>Professional Experience</h2>
+      <div class="card">
+        <h3>Front-End Developer at Company Y (2022 - Present)</h3>
+        <ul>
+          <li>Creation of reusable components in React.</li>
+          <li>Page optimization to improve SEO.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="card">
+        <h3>Front-End Bootcamp - Academia Z (2020)</h3>
+        <p>Intensive training in web development, JavaScript, and responsive design.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <div class="card">
+      <ul>
+        <li>✔️ Responsive Web Design Certificate – freeCodeCamp</li>
+        <li>✔️ Advanced JavaScript – Udemy (2024)</li>
+        <li>✔️ Git and GitHub – OpenBootcamp</li>
+      </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Testimonials</h2>
+      <div class="card">
+        <p>"Aitor is a dedicated professional with great attention to detail."</p>
+        <p><strong>- Laura Martínez</strong></p>
+      </div>
+    </section>
+
+    <section>
+      <h2>📄 CV Preview</h2>
+      <iframe src="archivos/DICCIONARIO SQL (1).pdf" width="100%" height="500px" title="Curriculum Vitae of Aitor Perez"></iframe>
+      <p style="text-align:center;">
+        <a href="aitor-perez-cv.pdf" download class="descargar-cv">⬇️ Download CV as PDF</a>
+      </p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form action="https://formsubmit.co/aitor3080@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_next" value="https://tuusuario.github.io/gracias.html" />
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Your name" />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="youremail@example.com" />
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <button id="topBtn" aria-label="Back to top">⬆️</button>
+  </main>
+
+  <footer>
+    &copy; 2025 Aitor Perez - All rights reserved
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
