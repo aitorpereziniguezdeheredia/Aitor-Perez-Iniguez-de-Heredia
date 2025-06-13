@@ -24,11 +24,17 @@
             <a href="#contact">📬 Contact</a>
             <a href="https://linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
         </div>
-        <button id="darkModeToggle" aria-label="Toggle dark mode">Dark Mode</button>
-        <button id="langToggle" onclick="switchLanguage()" aria-label="Switch language">
-            <span id="langFlag" class="fi fi-us"></span> 
+        <div class="top-right">
+            <!-- Botón de idioma -->
+            <button id="langToggle" onclick="switchLanguage()" aria-label="Cambiar idioma">
+                <span id="langFlag" class="fi fi-us"></span>
+            </button>
 
-        </button>
+            <!-- Botón de modo oscuro -->
+            <button id="darkModeToggle" aria-label="Cambiar modo oscuro">
+                <span id="darkModeIcon">🌙</span>
+            </button>
+        </div>
     </header>
 
     <main>

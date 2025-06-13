@@ -1,13 +1,20 @@
 // Modo oscuro
-const toggleBtn = document.getElementById("darkModeToggle");
-toggleBtn.addEventListener("click", () => {
-  document.body.classList.toggle("dark");
-  if (document.body.classList.contains("dark")) {
-    toggleBtn.textContent = "Modo claro";
-  } else {
-    toggleBtn.textContent = "Modo oscuro";
+const darkToggle = document.getElementById("darkModeToggle");
+  const darkIcon = document.getElementById("darkModeIcon");
+
+  // Opcional: activar modo oscuro si el usuario ya lo tiene activado
+  if (localStorage.getItem("dark") === "true") {
+    document.body.classList.add("dark");
+    darkIcon.textContent = "☀️";
   }
-});
+
+  darkToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    const isDark = document.body.classList.contains("dark");
+
+    darkIcon.textContent = isDark ? "☀️" : "🌙";
+    localStorage.setItem("dark", isDark); // Guardar preferencia
+  });
 
 // Botón volver arriba
 const topBtn = document.getElementById("topBtn");
