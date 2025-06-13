@@ -1,5 +1,6 @@
 :root {
   --main-color: #0a66c2;
+  --accent-color: #ef476f;
   --bg-color: #f4f7fa;
   --text-color: #2b2d42;
   --bg-dark: #121212;
@@ -15,7 +16,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s ease, color 0.3s ease;
   scroll-behavior: smooth;
 }
 
@@ -29,6 +30,7 @@ header {
   color: white;
   text-align: center;
   padding: 50px 20px;
+  position: relative;
 }
 
 .profile-pic {
@@ -217,6 +219,11 @@ button {
   cursor: pointer;
   display: none;
   z-index: 999;
+  transition: background-color 0.3s ease;
+}
+
+#topBtn:hover {
+  background-color: #305e9f;
 }
 
 footer {
@@ -231,7 +238,7 @@ body.dark footer {
   color: #000000;
 }
 
-/* 🔥 NUEVO: Alineación y estilo para botones arriba a la derecha */
+/* Botones idioma y modo oscuro */
 .top-right {
   position: absolute;
   top: 10px;
@@ -241,11 +248,43 @@ body.dark footer {
   z-index: 1000;
 }
 
-.top-right button:hover {
-  background-color: rgb(173, 173, 169);
+.top-right button {
+  border-color: black;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
 }
 
-/* Transiciones suaves */
-body {
-  transition: background-color 0.3s ease, color 0.3s ease;
+.top-right button:hover {
+  opacity: 0.8;
+  background-color: #9f9898;
+  transition: 1s;
+}
+
+.top-right .fi {
+  font-size: 1rem;
+}
+
+/* Responsive ajustes */
+@media (max-width: 768px) {
+  .top-right {
+    top: 8px;
+    right: 8px;
+    gap: 6px;
+  }
+
+  .top-right button,
+  .top-right .fi {
+    font-size: 0.8rem;
+  }
+
+  #topBtn {
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    font-size: 18px;
+  }
 }
